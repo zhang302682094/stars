@@ -1,0 +1,24 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'datas/style.css' %}">
+
+<h1 align="center">{{school}}</h1>
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+
+<table border="1" align="center" style=" border-collapse:collapse;border-spacing:0; border:1px  solid  #FFFFFF;">
+	<thead style="background:#50aca2;">
+		<td>学校</td>
+		<td>地址</td>
+	</thead>
+	<tr style="background: #e5efeb; ">
+		<td>{{school}}</td>
+		<td>{{addr}}</td>
+	</tr>
+</table>
+<!--<img src="https://www.w3school.com.cn/i/eg_tulip.jpg" />-->
+<p align="center">
+<img height="400" src="{% static "datas/images/pixiv60911068.png" %}" 
+alt="学校图片" />
+</p>
+
+

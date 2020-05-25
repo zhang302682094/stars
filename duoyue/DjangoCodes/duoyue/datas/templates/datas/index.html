@@ -1,0 +1,14 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'datas/style.css' %}">
+
+<h1 align="center">学校列表</h1>
+<a href="{% url 'datas:report' %}">月报所需数据</a>
+{% if school_list %}
+	<ul>
+	{% for school in school_list %}
+		<li><a href="{% url 'datas:detail' school.id %}">{{ school.name }}</li>
+	{% endfor %}
+	</ul>
+{% else %}
+	<p>暂时没有问题</p>
+{% endif %}

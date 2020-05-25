@@ -3,5 +3,5 @@ git clone 克隆链接
 
 2.将本地代码提交到GitHub(记得切换到合适的目录)
 git add .
-git commit
+git commit -m '提交信息'
 git push

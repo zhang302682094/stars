@@ -1,0 +1,40 @@
+#服务学校数量
+SELECT sum(服务学校) 服务学校 FROM
+(
+	SELECT count(DISTINCT school_name) 服务学校 FROM `activity` union all
+	SELECT count(DISTINCT school_name) 服务学校 FROM `survey` union all
+	SELECT count(DISTINCT school_name) 服务学校 FROM `visit` union all
+	SELECT count(DISTINCT school_name) 服务学校 FROM `punch`
+	) as a;
+	
+#服务学生人次
+select sum(服务学生) from
+(
+select sum(serve_people) 服务学生 from activity where form='嘉年华' union all
+select sum(serve_people) 服务学生 from visit union all
+select sum(person_number) 服务学生 from punch
+) as a;
+
+#家长培训人次
+select sum(serve_people) 家长培训人次 from activity where form='家长培训';
+
+#教师培训人次
+select sum(serve_people) 教师培训人次 from activity where form='教师培训';
+
+#书箱流转次数
+select sum(rotation_times) 书箱轮转次数 from book;
+
+#书箱流转册次
+select sum(numbering) 书箱轮转次数 from book;
+
+#线上打卡人数
+select sum(person_number) 线上打卡人数 from punch;
+
+#线上打卡次数
+select sum(times) 线上打卡次数 from punch;
+
+#线上打卡获奖人次
+select sum(winners) 线上打卡获奖人次 from punch;
+
+#调研人次
+select sum(person_number) 儿童调研人次 from children_research;

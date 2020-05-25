@@ -1,0 +1,19 @@
+<h1 align="center">月报</h1>
+<!--
+<p>服务学校个数：{{school}}</p>
+<p>服务学生人次：{{student}}</p>
+<p>家长陪训人次：{{parents}}</p>
+<p>教师陪训人次：{{teacher}}</p>
+<p>书箱流转轮次：{{box_turn}}</p>
+<p>test：{{data}}</p>
+-->
+
+
+<table align="center" border="1"  style="border-collapse:collapse;
+border-spacing:0;
+border:1px  solid  #FFFFFF;background: #e5efeb;
+text-align: center;height: 4.2rem;" >
+    {% for i,j in data.items %}
+        <tr><td>{{i}}</td>  <td>{{j}}</td></tr>
+    {% endfor %}
+</table>

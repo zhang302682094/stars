@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0312a40c-76d3-4768-9441-f030c3d41a0c" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1bqK4ON9Q178AlS4OlGzQKkL19p" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunManager">
+    <configuration name="views" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DjangoCodes" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mysite/polls" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mysite/polls/views.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.views" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0312a40c-76d3-4768-9441-f030c3d41a0c" name="Default Changelist" comment="" />
+      <created>1589353991228</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1589353991228</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589354092915">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1589354092915" />
+    <state x="504" y="215" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1589360610488">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="504" y="215" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1589360610488" />
+    <state x="659" y="186" key="DBNavigator.ConnectionFilterSettingsDialog" timestamp="1589364993433">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="659" y="186" key="DBNavigator.ConnectionFilterSettingsDialog/0.0.1536.824@0.0.1536.824" timestamp="1589364993433" />
+    <state x="563" y="144" key="DBNavigator.DatasetFilterDialog" timestamp="1589445974258">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="563" y="144" key="DBNavigator.DatasetFilterDialog/0.0.1536.824@0.0.1536.824" timestamp="1589445974258" />
+    <state x="724" y="287" key="DBNavigator.DatasetRecordEditorDialog" timestamp="1589363011792">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="724" y="287" key="DBNavigator.DatasetRecordEditorDialog/0.0.1536.824@0.0.1536.824" timestamp="1589363011792" />
+    <state x="512" y="84" key="DBNavigator.ProjectSettingsDialog" timestamp="1589436391502">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="512" y="84" key="DBNavigator.ProjectSettingsDialog/0.0.1536.824@0.0.1536.824" timestamp="1589436391502" />
+    <state x="643" y="199" key="DBNavigator.ResourceMonitorDialog" timestamp="1589360587348">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="643" y="199" key="DBNavigator.ResourceMonitorDialog/0.0.1536.824@0.0.1536.824" timestamp="1589360587348" />
+    <state x="774" y="287" key="DBNavigator.ResultSetRecordViewerDialog" timestamp="1589362617666">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="774" y="287" key="DBNavigator.ResultSetRecordViewerDialog/0.0.1536.824@0.0.1536.824" timestamp="1589362617666" />
+    <state x="762" y="185" key="FileChooserDialogImpl" timestamp="1589436386047">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="762" y="185" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1589436386047" />
+    <state width="912" height="195" key="GridCell.Tab.0.bottom" timestamp="1589471037753">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="912" height="195" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1589471037753" />
+    <state width="912" height="195" key="GridCell.Tab.0.center" timestamp="1589471037753">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="912" height="195" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1589471037753" />
+    <state width="912" height="195" key="GridCell.Tab.0.left" timestamp="1589471037753">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="912" height="195" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1589471037753" />
+    <state width="912" height="195" key="GridCell.Tab.0.right" timestamp="1589471037753">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="912" height="195" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1589471037753" />
+    <state x="483" y="72" key="SettingsEditor" timestamp="1589364348106">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="483" y="72" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1589364348106" />
+    <state width="200" height="160" key="TextEditor.choice_text" timestamp="1589362580701">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="200" height="160" key="TextEditor.choice_text/0.0.1536.824@0.0.1536.824" timestamp="1589362580701" />
+    <state x="662" y="253" key="com.intellij.ide.util.TipDialog" timestamp="1590214274428">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="662" y="253" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1590214274428" />
+    <state x="643" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1589365228343">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="643" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1589365228343" />
+  </component>
+</project>

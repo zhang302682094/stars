@@ -4,12 +4,13 @@ from django.template import loader
 from django.db import connection
 from django.urls import reverse
 from django.views import generic
-
+import os
+from . import words
 from .models import *
 
 
 # Create your views here.
-
+cursor = connection.cursor()
 
 class IndexView(generic.ListView):
     template_name = 'datas/index.html'
@@ -32,9 +33,15 @@ def detail(request, school_id):
     #     return School.objects.order_by('name')
     return render(request, 'datas/detail.html', {'school': school, 'addr': addr, 'image': image})
 
+def community(request):
+    # cursor.execute("SELECT name,address,n_people,contacter,contacter_tel from community")
+    # result = cursor.fetchall()
+    communities = Community.objects.filter()
+    return render(request, 'datas/community.html', {'communities': communities})
+
 
 def report(request):
-    cursor = connection.cursor()
+
     # cursor.execute('SELECT count(DISTINCT school_name) 服务学校 FROM `activity`')
     execute_list = [
         '''SELECT sum(服务学校) 服务学校 FROM (
@@ -67,7 +74,36 @@ def report(request):
     data = dict(zip(items, results))
     return render(request, 'datas/report.html', {'data': data, 'results': results, 'items': items})
 
+def upload_file(request):
+    if request.method == "POST":
+        files = request.FILES.getlist("myfile", None)# 上传多个文件
+        # myFile = request.FILES.get("myfile", None) # 上传单个文件
+        for myFile in files:
+            if not myFile:
+                return HttpResponse("没有选择文件")
+            destination = open(os.path.join('F:/upload', myFile.name), 'wb+')
+            # destination.write(myFile)
+            for chunk in myFile.chunks():
+                destination.write(chunk)
+            destination.close()
 
+        return HttpResponse("上传成功")
+
+def tools(request):
+    return render(request, 'datas/tools.html')
+
+def WordCloud(request):
+    return render(request, 'datas/wordcloud.html')
+
+def WordCloudShow(request):
+    if request.method == "POST":
+        text = request.POST.get('text')
+        words.generate_wc(text=text)
+    return render(request, 'datas/wordcloudshow.html')
+
+def concatPDF(request):
+    upload_file(request)
+    return render(request, 'datas/concat_pdf.html')
 # class ReportView(generic.DetailView):
 #     template_name = 'datas/report.html'
 #     model = School

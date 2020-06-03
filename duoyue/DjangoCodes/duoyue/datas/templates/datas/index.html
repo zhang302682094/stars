@@ -2,7 +2,15 @@
 <link rel="stylesheet" type="text/css" href="{% static 'datas/style.css' %}">
 
 <h1 align="center">学校列表</h1>
-<a href="{% url 'datas:report' %}">月报所需数据</a>
+<a href="{% url 'datas:report' %}">月报所需数据</a><br/>
+<a href="{% url 'datas:tools' %}">工具</a>
+<a href="{% url 'datas:community' %}">社区</a>
+<form enctype="multipart/form-data" action="uploadFile/" method="POST">
+	{% csrf_token %}
+	<input type="file" name="myfile" multiple=""/>
+	<br/>
+	<input type="submit" value="上传"/>
+</form>
 {% if school_list %}
 	<ul>
 	{% for school in school_list %}

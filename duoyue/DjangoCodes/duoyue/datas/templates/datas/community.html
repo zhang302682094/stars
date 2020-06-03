@@ -1,0 +1,22 @@
+{% extends 'datas/base.html' %}
+<h1 align="center">社区</h1>
+<table align="center" style="border-collapse:collapse;border:1px solid #FFFFFF">
+	<thead style="background:#50aca2;">
+		<td>社区名</td>
+		<td>地址</td>
+		<td>总人数</td>
+		<td>联系人</td>
+		<td>联系电话</td>
+	</thead>
+{% if communities %}
+	{% for community in communities %}
+	<tr style="background: #e5efeb;">
+		<td>{{community.name}}</td>
+		<td>{{community.address}}</td>
+		<td>{{community.n_people}}</td>
+		<td>{{community.contacter}}</td>
+		<td>{{community.contacter_tel}}</td>
+	</tr>
+	{% endfor %}
+{% endif %}
+</table>

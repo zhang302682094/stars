@@ -1,0 +1,13 @@
+
+<h1 align="center">词云</h1>
+<form  action="wordcloud/show" method="POST" >
+
+	{% csrf_token %}
+	<input type="text" name="text" style="width:300px;height:300px"/>
+	<input type="submit" value="生成词云"/>
+</form>
+{% load static %}
+<p align="center">
+<img height="400" src="{% static "datas/images/trial.png" %}" 
+alt="词云图片" />
+</p>

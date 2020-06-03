@@ -80,6 +80,21 @@ class Class(models.Model):
         db_table = 'class'
 
 
+class Community(models.Model):
+    name = models.CharField(max_length=255, blank=True, null=True)
+    address = models.CharField(max_length=255, blank=True, null=True)
+    n_people = models.IntegerField(blank=True, null=True)
+    library = models.CharField(max_length=255, blank=True, null=True)
+    contacter = models.CharField(max_length=255, blank=True, null=True)
+    contacter_location = models.CharField(max_length=255, blank=True, null=True)
+    contacter_tel = models.CharField(max_length=255, blank=True, null=True)
+    image = models.CharField(max_length=255, blank=True, null=True)
+
+    class Meta:
+        managed = False
+        db_table = 'community'
+
+
 class Coorperation(models.Model):
     s = models.ForeignKey('School', models.DO_NOTHING, blank=True, null=True)
     school_name = models.CharField(max_length=255, blank=True, null=True)

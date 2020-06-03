@@ -1,0 +1,14 @@
+from PyPDF2 import PdfFileMerger
+import os
+
+path = 'D:/desktop/我的电子发票/5月'
+files = os.listdir(path)  # 列出目录中的所有文件
+merger = PdfFileMerger()
+
+for file in files:  # 从所有文件中选出pdf文件合并
+    if file[-4:] == ".pdf":
+        file = os.path.join(path, file)
+        merger.append(open(file, 'rb'))
+
+with open('newfile.pdf', 'wb') as fout:  # 输出文件为newfile.pdf
+    merger.write(fout)

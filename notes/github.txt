@@ -1,3 +1,4 @@
 切换到项目所在文件夹
 git add .
 git commit -m '备注'
+git push

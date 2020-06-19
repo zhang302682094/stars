@@ -9,6 +9,7 @@ from . import words
 from .models import *
 
 
+
 # Create your views here.
 cursor = connection.cursor()
 
@@ -59,8 +60,8 @@ def report(request):
         "select sum(serve_people) 教师培训人次 from activity where form='教师培训'",
         "select sum(rotation_times) 书箱轮转次数 from book",
         "select sum(numbering) 书箱轮转册次 from book",
-        "select sum(person_number) 线上打卡人数 from punch",
-        "select sum(times) 线上打卡次数 from punch",
+        "select count(student_name) 线上打卡人数 from punch2",
+        "select sum(punch_times) 线上打卡次数 from punch2",
         "select sum(winners) 线上打卡获奖人次 from punch",
         "select sum(person_number) 儿童调研人次 from children_research"]
     results = []
@@ -68,7 +69,7 @@ def report(request):
     for i in execute_list:
         cursor.execute(i)
         result = cursor.fetchone()[0]
-        results.append(int(result))
+        results.append(result)
     items = ['服务学校个数：', '服务学生人次：', '家长陪训人次：', '教师陪训人次：', '书箱流转次数：', '书箱流转册次：',
              '线上打卡人数：', '线上打卡次数：', '线上打卡获奖人次：', '调研人次：']
     data = dict(zip(items, results))
@@ -97,9 +98,10 @@ def WordCloud(request):
 
 def WordCloudShow(request):
     if request.method == "POST":
-        text = request.POST.get('text')
-        words.generate_wc(text=text)
-    return render(request, 'datas/wordcloudshow.html')
+        text = request.POST.get('lala')
+        name = words.generate_wc(text=text)
+        name = name[-39:]
+    return render(request, 'datas/wordcloudshow.html', {'name': name})
 
 def concatPDF(request):
     upload_file(request)

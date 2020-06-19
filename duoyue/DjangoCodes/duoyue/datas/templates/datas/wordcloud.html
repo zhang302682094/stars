@@ -1,11 +1,15 @@
 {% include 'datas/base.html' %}
 <h1 align="center">词云</h1>
-<form  action="wordcloud/show" method="POST" >
+<form  action="wordcloud/show" method="POST" align="center">
 
 	{% csrf_token %}
-	<input type="text" name="text" style="width:300px;height:300px"/>
+	<!--<input type="text" name="text" id="test1" style="width:300px;height:300px"/>-->
+	<textarea rows=1 name="lala" id="test1" align="center" style="font-size:16px; line-height:1.6em;" 
+onkeyup="this.style.height=this.scrollHeight-4+'px'"> </textarea><br><br>
 	<input type="submit" value="生成词云"/>
+	<input  type="button" value="清空" onclick="document.getElementById('test1').value=''" />
 </form>
+
 {% load static %}
 <p align="center">
 <img height="400" src="{% static "datas/images/trial.png" %}" 

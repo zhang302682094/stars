@@ -39,6 +39,9 @@ class Book(models.Model):
     flow_in = models.CharField(max_length=255, blank=True, null=True)
     flow_out = models.CharField(max_length=255, blank=True, null=True)
 
+    def __str__(self):
+        return self.id
+
     class Meta:
         managed = False
         db_table = 'book'
@@ -177,6 +180,10 @@ class School(models.Model):
     image = models.CharField(max_length=255, blank=True, null=True)
     illustration = models.CharField(max_length=255, blank=True, null=True)
 
+    def __str__(self):
+        return self.name
+
+
     class Meta:
         managed = False
         db_table = 'school'
@@ -193,15 +200,15 @@ class StaffEstimate(models.Model):
         db_table = 'staff_estimate'
 
 
-class Student(models.Model):
-    name = models.CharField(max_length=255, blank=True, null=True)
-    join_survey = models.CharField(max_length=255, blank=True, null=True)
-    s = models.ForeignKey(School, models.DO_NOTHING, blank=True, null=True)
-    class_field = models.CharField(db_column='class', max_length=255, blank=True, null=True)  # Field renamed because it was a Python reserved word.
-
-    class Meta:
-        managed = False
-        db_table = 'student'
+# class Student(models.Model):
+#     name = models.CharField(max_length=255, blank=True, null=True)
+#     join_survey = models.CharField(max_length=255, blank=True, null=True)
+#     s = models.ForeignKey(School, models.DO_NOTHING, blank=True, null=True)
+#     class_field = models.CharField(db_column='class', max_length=255, blank=True, null=True)  # Field renamed because it was a Python reserved word.
+#
+#     class Meta:
+#         managed = False
+#         db_table = 'student'
 
 
 class Survey(models.Model):

@@ -1,0 +1,4 @@
+pip install virtualenv
+virtualenv pyweb  #pyweb  为虚拟环境目录名，目录名自定义.
+进入pyweb目录下的Scripts目录下。然后输入：activate 回车，就能启动虚拟环境。
+至于退出虚拟环境，使用如下命令即可！deactivate

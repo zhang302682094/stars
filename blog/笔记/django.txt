@@ -1,0 +1,6 @@
+创建项目
+django-admin startproject mysite
+运行服务器，默认端口号为8000
+py manage.py runserver
+创建应用
+py manage.py startapp polls
